@@ -1,0 +1,8 @@
+body {
+    background:
+    linear-gradient(135deg, rgb(248, 145, 162) 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, rgb(248, 145, 162) 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, rgb(248, 145, 162) 25%, transparent 25%),
+    linear-gradient(45deg, rgb(248, 145, 162) 25%, transparent 25%);
+    background-size: 100px 100px;
+}

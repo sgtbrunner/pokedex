@@ -1,0 +1,35 @@
+.picture {
+  width: 96px;
+  height: auto;
+}
+
+.card {
+  width: 160px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: #f7f793 5px 5px 5px, inset #f7f793 5px 5px 5px;
+          box-shadow: #f7f793 5px 5px 5px, inset #f7f793 5px 5px 5px;
+}
+
+@media (max-width: 579px) {
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+}
+/*# sourceMappingURL=card.style.css.map */
