@@ -1,6 +1,11 @@
 .picture {
     width: 96px;
     height: auto;
+
+    @media(max-width: 579px) {
+        width: 64px;
+        height: auto;
+    }
 }
 
 .card {
@@ -14,13 +19,14 @@
         cursor: pointer;
         transform: scale(1.05);
         box-shadow:rgba(247, 247, 147,2) 5px 5px 5px, inset rgba(247, 247, 147,2) 5px 5px 5px;
-      }
+    }
 
     @media (max-width:579px) {
         width: 120px;
         height: 120px;
-        //   p {
-        //       font-size: 1rem;
-        //   }
+
+        div {
+            font-size: 0.9rem;
+        }
     }
 }

@@ -6,15 +6,16 @@ import {getID} from '../../assets/SupportFunctions';
 import './cardlist.style.css'
 
 
-const CardList = function({pokemons}) {
+const CardList = function({pokemons, openModal}) {
 		return (
-			<div className='cardlist mh5'>
+			<div className='cardlist' id="cardlist">
 				{
 					pokemons.map((pokemon, index) => {
 						return (
                             <Card name = {pokemon.name}
                                   id = {getID(index)} 
-                                  key = {getID(index)}
+								  key = {getID(index)}
+								  openModal = {openModal}
                             />
 						)
 					})

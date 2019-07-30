@@ -1,11 +1,15 @@
 import React from 'react';
 
-export const Header = function() {
+import './header.style.css';
+
+const Header = function() {
 	return (
-		// src={require("url")} é a sintaxe para importar imagens locais dentro do código, sem usar import.
-		<a href="#flex-container">
+		// src={require("url")} is a sintax for importing image files straight into the code. It could also
+		// be done by using the import method;
+		<a href="#cardlist">
 			<div className="cover-container">
-				<img id ="cover-image" src={require("../../assets/img/logo.png")} alt="logo"/>
+				<img className="cover-image pt4" src={require("../../assets/logo.png")} alt="logo"/>
+				<p className="pv4">Your Pokedex Guide</p>
 			</div>
 		</a>
 	)

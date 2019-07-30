@@ -2,10 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 50px 0;
+    margin: 2rem 4rem;
     padding: 15px;
     min-height: 70vh;
     border: 1px solid lightgrey;
     border-radius: 10px;
     background: white;
+
+  @media (max-width: 767px) {
+    margin: 2rem;
   }
+
+  @media (max-width: 579px) {
+    margin: 2rem 1rem;
+  }
+}

@@ -16,6 +16,17 @@ export const getPokemons = async function(url) {
 	}
 }
 
+export const getChar = function(index) {
+	console.log(index);
+	try {
+		fetch(`https://pokeapi.co/api/v2/pokemon/${index}/`)
+		.then(response => response.json())
+		.then(data => this.setState({clickedcard: data}))
+	} catch(err) {
+		console.log('oops', err);
+	}
+}
+
 // Fetches all the character data information from API server and store it in pages as it's defined on SWAPI
 // const getData = async function() {
 // 	try {

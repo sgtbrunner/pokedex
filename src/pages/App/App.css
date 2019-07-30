@@ -1,8 +1,5 @@
 body {
-    background:
-    linear-gradient(135deg, rgb(248, 145, 162) 25%, transparent 25%) -50px 0,
-    linear-gradient(225deg, rgb(248, 145, 162) 25%, transparent 25%) -50px 0,
-    linear-gradient(315deg, rgb(248, 145, 162) 25%, transparent 25%),
-    linear-gradient(45deg, rgb(248, 145, 162) 25%, transparent 25%);
-    background-size: 100px 100px;
+  background: linear-gradient(135deg, pink 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px), linear-gradient(225deg, pink 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px) 0 64px;
+  background-color: pink;
+  background-size: 64px 128px;
 }

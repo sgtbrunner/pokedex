@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Pokemon;
+  src: url("Pokemon Solid.ttf");
+}
+
+.cover-container {
+  z-index: 1;
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: 100vh;
+}
+
+.cover-container p {
+  font-family: Pokemon;
+  font-size: 2rem;
+  color: #3860aa;
+}
+
+.cover-image {
+  width: 80%;
+  height: auto;
+}
+/*# sourceMappingURL=header.style.css.map */
