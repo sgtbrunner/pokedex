@@ -8,17 +8,22 @@
 
     p {
         font-family: Pokemon;
-        font-size: 2rem;
-        color: #3860aa;
+        font-size: 6vh;
+        color: #ef4036;
+    }
+
+    @media (max-width:576px) {
+        p {
+            font-size: 4vh;
+        }
     }
 }
 
 .cover-image {
-    max-width: 120vh;
-    width: 100%;
+    max-width: 50vh;
     height: auto;
 
-    @media (max-width:767px) {
-        max-width: 100vh;
+    @media (max-width:576px) {
+        max-width: 40vh;
     }
 }

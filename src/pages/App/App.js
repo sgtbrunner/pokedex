@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import Header from '../../components/header/header.component';
 import CardList from '../../components/cardlist/cardlist.component';
@@ -9,7 +9,7 @@ import {getPokemons} from '../../assets/SupportFunctions';
 
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -26,13 +26,14 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // ** Fetches all Pokemons from POKEAPI
+    // ** Fetches all Pokemons from POKEAPI once the temporary page starts loading
       getPokemons('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1000')
       .then(response => { 
         this.setState({pokemons: response.results})
       })
   }
 
+  // ** Opens the modal whenever the user clicks on a Pokemon card on Pokedex
   openModal = (event) => {
     try {
       fetch(`https://pokeapi.co/api/v2/pokemon/${event.target.id}/`)
@@ -54,6 +55,7 @@ class App extends Component {
     }
   }
 
+// ** Closes the modal everytime the user clicks on 'X' on the modal
   onCloseClick = () => {
     this.setState({
       showModal: false
@@ -63,11 +65,13 @@ class App extends Component {
   render() {
     if (!this.state.pokemons.length) {
       return (
+        // App shows page loader while it requests data from the API
           <div className="temp-page">
             <div className ="page-loader animate-flicker">Please wait...</div>
           </div>      
       )} else {
       return (
+        // Main App
         <div className="App">
           <Header />
           <div id="pokedex" className="pt5">
