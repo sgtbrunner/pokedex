@@ -8,7 +8,7 @@ import './cardlist.style.css'
 
 const CardList = function({pokemons, openModal}) {
 		return (
-			<div className='cardlist' id="cardlist">
+			<div className='cardlist'>
 				{
 					pokemons.map((pokemon, index) => {
 						return (

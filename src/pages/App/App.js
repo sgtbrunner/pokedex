@@ -63,34 +63,35 @@ class App extends Component {
   render() {
     if (!this.state.pokemons.length) {
       return (
-          <div id="temp-page">
+          <div className="temp-page">
             <div className ="page-loader animate-flicker">Please wait...</div>
           </div>      
-      )} 
-        else
-      {
+      )} else {
       return (
         <div className="App">
           <Header />
-          <CardList 
-            pokemons={this.state.pokemons} 
-            openModal={this.openModal}
-          />
-          <Modal 
-            name={this.state.name}
-            id={this.state.id}
-            height={this.state.height}
-            weight={this.state.weight}
-            abilities={this.state.abilities}
-            types={this.state.types}
-            items={this.state.items}
-            showModal={this.state.showModal}
-            onCloseClick={this.onCloseClick}
-          />
-          <Footer />
+          <div id="pokedex" className="pt5">
+            <CardList 
+              pokemons={this.state.pokemons} 
+              openModal={this.openModal}
+            />
+            <Modal 
+              name={this.state.name}
+              id={this.state.id}
+              height={this.state.height}
+              weight={this.state.weight}
+              abilities={this.state.abilities}
+              types={this.state.types}
+              items={this.state.items}
+              showModal={this.state.showModal}
+              onCloseClick={this.onCloseClick}
+            />
+            <Footer />
+          </div>
         </div>
       )
     }
+  }
 }
   
 export default App;

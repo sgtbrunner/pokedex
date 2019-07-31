@@ -16,9 +16,9 @@
     border: 3px solid #888;
     border-radius: 20px;
     width: 700px;
-    background: linear-gradient(to right, rgba(239,239,239,100%) 0%,rgba(219,219,219,100%) 50%,rgba(239,239,239,100%) 100%);
+    background-color: white;
 }
-  
+
 .modal-load {
     text-align: center;
 }
@@ -65,10 +65,13 @@
   
 .portrait {
     grid-row: 1 / span 6;
-    width: 100%;
+    width: 80%;
     height: auto;
-    border: 4px solid goldenrod;
+    border: 4px solid rgba(247, 247, 147,2);
+    border-radius: 50%;
+    padding: 1rem;
     user-select: none;
+    background-color: #9EEBCF;
 }
   
 .char-name {
@@ -93,22 +96,10 @@
     padding: 20px 0;
 }
 
-  /*** Handles Modal settings when screen width decreases to less than 735px */
-@media only screen and (max-width: 735px) {
+/*** Handles Modal settings when screen width decreases to less than 767px */
+@media only screen and (max-width: 767px) {
     .modal-content, .modal-load {
-      width: 80vw;
-      margin: 2vh auto;
-    }
-
-    .stats {
-      justify-self: start;
-      font-size: 2.8vw;
-    }
-}
-/*** Handles Modal settings when screen width decreases to less than 516px */
-@media only screen and (max-width: 516px) {
-    .modal-content, .modal-load {
-      width: 60vh;
+      width: 70%;
       height: auto;
       margin: 5vh auto;
     }

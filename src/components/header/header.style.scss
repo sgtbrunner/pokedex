@@ -1,8 +1,3 @@
-@font-face { 
-    font-family: Pokemon; 
-    src: url('Pokemon Solid.ttf'); 
-} 
-
 .cover-container {
     z-index: 1;
     background-color: lightgoldenrodyellow;
@@ -19,6 +14,11 @@
 }
 
 .cover-image {
-    width: 80%;
+    max-width: 120vh;
+    width: 100%;
     height: auto;
+
+    @media (max-width:767px) {
+        max-width: 100vh;
+    }
 }

@@ -1,5 +1,56 @@
+@font-face {
+  font-family: Pokemon;
+  src: url("Pokemon Solid.ttf");
+}
+
 body {
   background: linear-gradient(135deg, pink 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px), linear-gradient(225deg, pink 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px) 0 64px;
   background-color: pink;
   background-size: 64px 128px;
 }
+
+.temp-page {
+  max-width: 100%;
+  height: 100vh;
+  background-color: lightgoldenrodyellow;
+}
+
+.page-loader {
+  text-align: center;
+  vertical-align: center;
+  font-size: 12vh;
+  padding: 25vh 12vh;
+  font-family: Pokemon;
+  color: #3860aa;
+}
+
+/*SETS FADE IN & FADE OUT ANIMATION - EXTRACTED FROM THE WEB*/
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-flicker {
+  -webkit-animation: flickerAnimation 1s infinite;
+  animation: flickerAnimation 1s infinite;
+}
+/*# sourceMappingURL=App.css.map */
